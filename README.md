@@ -27,4 +27,4 @@ Análise histórica de patologias (Dengue, Chikungunya e Zikavírus)
 
 |  <b>1a Arquitetura</b>                                                                             |  <b>2a Arquitetura</b>                                                                         |
 |----------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------|
-|  <img src="https://github.com/Lucas-Sobreira/FIA_Dengue/blob/main/Arquivos/Arquitetura_02.png"/>   | <img src="https://github.com/Lucas-Sobreira/FIA_Dengue/blob/main/Arquivos/Arquitetura_03.png"/>|
+|  <img src="https://github.com/Lucas-Sobreira/FIA_Dengue/blob/main/Arquivos/Arquitetura_02.png"/>   | <img src="https://github.com/Lucas-Sobreira/FIA_Dengue/blob/main/Arquivos/Arquitetura_04.png"/>|
