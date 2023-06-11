@@ -13,13 +13,18 @@ Análise histórica de patologias (Dengue, Chikungunya e Zikavírus)
   <p>Como o projeto foi descontínuado, conseguimos realizar as seguintes arquiteturas:</p>
   <br>
 </div>
-
-<div align="center" class="coluna-33">
+<!-- 
+<div align="center" float>
   <b><p>1a Arquitetura</p></b>
   <img src="https://github.com/Lucas-Sobreira/FIA_Dengue/blob/main/Arquivos/Arquitetura_02.png"/>
-  <br>
-  <br>
-  <br>
+</div>
+  
+<div>
   <b><p>2a Arquitetura</p></b>
   <img src="https://github.com/Lucas-Sobreira/FIA_Dengue/blob/main/Arquivos/Arquitetura_03.png"/>
-</div>
+</div> -->
+
+
+|  <b>1a Arquitetura</b>                                                                             |  <b>2a Arquitetura</b>                                                                         |
+|----------------------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------------|
+|  <img src="https://github.com/Lucas-Sobreira/FIA_Dengue/blob/main/Arquivos/Arquitetura_02.png"/>   | <img src="https://github.com/Lucas-Sobreira/FIA_Dengue/blob/main/Arquivos/Arquitetura_03.png"/>|
