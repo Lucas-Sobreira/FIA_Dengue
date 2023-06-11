@@ -1,0 +1,57 @@
+version: '3.7'
+
+networks:
+  net:
+    driver: bridge
+
+services:
+    postgres:
+        image: postgres:9.6
+        hostname: postgres
+        container_name: postgres
+        environment:
+            - POSTGRES_USER=airflow
+            - POSTGRES_PASSWORD=airflow
+            - POSTGRES_DB=airflow
+            - PGDATA=/var/lib/postgresql/data
+        healthcheck:
+            test: ["CMD", "pg_isready", "-U", "airflow"]
+            interval: 5s
+            retries: 5
+        networks:
+            - net
+        volumes:
+            - ./database:/var/lib/postgresql/data
+
+    airflow:
+        image: ferrettivinicius/airflow-aula-fia:latest
+        hostname: airflow
+        container_name: airflow
+        depends_on:
+            postgres:
+                condition: service_healthy
+        volumes:
+            - ./dags:/usr/local/airflow/dags
+            - ./jars:/usr/local/airflow/jars
+            - ./config:/usr/local/airflow/config
+            - ./plugins:/usr/local/airflow/plugins
+        networks:
+            - net
+        ports:
+            - 8080:8080
+
+    minio:
+        image: minio/minio:latest
+        hostname: minio
+        container_name: minio
+        environment:
+          - MINIO_ROOT_USER=aulafia 
+          - MINIO_ROOT_PASSWORD=aulafia@123
+        volumes:
+          - ./minio:/data
+        networks:
+          - net
+        ports:
+          - 9000:9000
+          - 9001:9001
+        command: server /data --console-address ":9001"
